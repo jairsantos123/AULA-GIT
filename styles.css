@@ -1,25 +1,24 @@
 body {
     font-family: sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* Um cinza bem claro */
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
 input[type="text"],
 input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ced4da;
     border-radius: 4px;
-    font-size: 1em;
     width: 300px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura */
 }
 
-button#btnCriar {
-    background-color: #28a745;
+button {
+    background-color: #007bff; /* Azul padrão do Bootstrap */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -29,48 +28,46 @@ button#btnCriar {
     margin-bottom: 20px;
 }
 
-button#btnCriar:hover {
-    background-color: #1e7e34;
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
 }
 
-ul#listaUsuarios {
+#listaUsuarios {
     list-style: none;
     padding: 0;
-    width: 300px;
+    width: 400px;
+}
+
+#listaUsuarios li {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-ul#listaUsuarios li {
-    padding: 10px 15px;
-    border-bottom: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.95em;
 }
 
-ul#listaUsuarios li:last-child {
-    border-bottom: none;
-}
-
-ul#listaUsuarios li span {
-    flex-grow: 1;
-}
-
-ul#listaUsuarios li button {
-    background-color: #dc3545;
+#listaUsuarios li button {
+    background-color: #28a745; /* Verde para Editar */
     color: white;
     border: none;
+    padding: 8px 12px;
     border-radius: 4px;
-    padding: 5px 10px;
     cursor: pointer;
-    font-size: 0.8em;
-    margin-left: 10px;
+    font-size: 0.9em;
+    margin-left: 8px;
 }
 
-ul#listaUsuarios li button:hover {
-    background-color: #c82333;
+#listaUsuarios li button:hover {
+    background-color: #1e7e34; /* Verde mais escuro no hover */
+}
+
+#listaUsuarios li button:last-child {
+    background-color: #dc3545; /* Vermelho para Excluir */
+}
+
+#listaUsuarios li button:last-child:hover {
+    background-color: #c82333; /* Vermelho mais escuro no hover */
 }
