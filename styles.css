@@ -1,82 +1,71 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    margin: 20px;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: #f0f4f8;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    justify-content: center;
+  }
 
-input[type="text"],
-input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
-button {
-    background-color: #007bff;
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  #btnCriar {
+    padding: 0.7rem;
+    background-color: #6c63ff;
     color: white;
-    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#listaUsuarios {
+  }
+  
+  #btnCriar:hover {
+    background-color: #5548c8;
+  }
+  
+  ul#listaUsuarios {
     list-style: none;
     padding: 0;
-    width: 400px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#listaUsuarios li {
+    margin-top: 2rem;
+  }
+  
+  ul#listaUsuarios li {
+    background-color: #f9f9f9;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
-#listaUsuarios li:last-child {
-    border-bottom: none;
-}
-
-#listaUsuarios li button {
-    background-color: #28a745; /* Verde para Editar */
+  }
+  
+  .actions button {
+    margin-left: 0.5rem;
+    background-color: #6c757d;
+  }
+  
+  .actions button:hover {
+    background-color: #495057;
+  }
+  
+  .btnEditar, 
+  .btnExcluir{
+    padding: 0.7rem;
+    background-color: #ff6b6b;
     color: white;
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 0.9em;
-    margin-left: 8px;
-    transition: background-color 0.3s ease;
-}
-
-#listaUsuarios li button:hover {
-    background-color: #1e7e34;
-}
-
-#listaUsuarios li button:last-child {
-    background-color: #dc3545; /* Vermelho para Excluir */
-}
-
-#listaUsuarios li button:last-child:hover {
-    background-color: #c82333;
-}
+    margin-right: 5px;
+  }
+  
+  .btnEditar:hover, 
+  .btnExcluir:hover {
+    background-color: #e63946;
+  }
